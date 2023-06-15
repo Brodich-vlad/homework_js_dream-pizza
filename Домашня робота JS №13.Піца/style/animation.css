@@ -1,0 +1,10 @@
+   /* Аніміція слайду */
+  
+    @-webkit-keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+    }
+    @keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+    }

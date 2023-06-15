@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашня робота JS №13 Влад Бродич</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/animation.css">
+    <link rel="stylesheet" href="./style/main_style.css">
+</head>
+<body>
+    <div class="main-page" id="main-page">
+        <header>
+            <div class="header">
+                <nav class="header-nav">
+                    <a class="logo" href="./">
+                        <img src="./imege/logo.jpg" alt="logo" width="60">
+                    </a>
+                    <div class="dropdown">
+                        <button id="btnShowMenu" class="dropbtn">Меню</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a class="link-focus" href="#main">Головна</a>
+                            <a class="link-focus" href="./pizza/index.html">Замовити піцу</a>
+                            <a class="link-focus" href="#partners">Партнери</a>
+                            <a class="link-focus" href="#contacts">Контакти</a>
+                        </div>
+                    </div>   
+                </nav>
+            </div>
+        </header>
+        <main class="main" id="main">
+            <!-- Сукція "Домашні роботи" -->
+            <section class="works work-1" id="work-1">
+                <h1>Домашня робота JS №13 Події в DOM-дереві.</h1> 
+                <div class="work-2">
+                    <h2>Піца</h2>
+                    <p>В поекті "Піца" реалізувати наступне:<br>1. Індігрієнти додаються перетягуванням на корж.<br>2. При заповненні піци оновлюється інформація ціна,назви продуктів.<br>3. При заповненні данних замовника данні перевіряються. Як-що добре - Зелена рамка,як-що ні - червона.<br>4. Банер "Отримати знижку" - тікає від курсору.
+                    </p> 
+                    <a class="link-focus link-pizza" href="./pizza/index.html">Замовити піцу</a>
+                </div>
+            </section>
+            <!-- Секція "Партнери". -->
+            <section class="partners" id="partners">
+                <h2>Наші захисники та партнери</h2>
+                <ul class="slider-show-container">
+                    <li class="slide fade">
+                        <img src="./imege/img_sliider/mi-z-ukraini.jpg" alt="Добрий вечір ми з України" >
+                        <p class="alt-text">Нажаль картинка не завантажилась.</p>
+                    </li>
+                    <li class="slide fade">
+                        <img src="./imege/img_sliider/image_1.png" alt="Україна переможе">
+                        <p class="alt-text">Нажаль картинка не завантажилась.</p>
+                    </li>
+                    <li class="slide fade">
+                        <img src="./imege/img_sliider/image_2.png" alt="руский кораблик иди на ...">
+                        <p class="alt-text">Нажаль картинка не завантажилась.</p>
+                    </li>
+                    <li class="slide fade">
+                        <img src="./imege/img_sliider/image_3.jpg" alt="Україна">
+                        <p class="alt-text">Нажаль картинка не завантажилась.</p>
+                    </li>
+                    <li class="slide fade">
+                        <img src="./imege/img_sliider/image_4.png" alt="Вірю в ЗСУ. Вірю в перемогу">
+                        <p class="alt-text">Нажаль картинка не завантажилась.</p>
+                    </li>
+                    <li class="slide fade">
+                        <img src="./imege/img_sliider/image-bpcm.png" alt="БРСМ">
+                        <p class="text">Дякую компанії "БРСМ" за бескоштовний доступ до мережі інтернет.</p>
+                        <p class="alt-text">Нажаль картинка не завантажилась.</p>
+                    </li>
+                    <li class="slide fade">
+                        <img src="./imege/img_sliider/viru-v-zsu.jpg" alt="Вірю в ЗСУ." >
+                        <p class="text">Дякую ЗСУ за мирне небо, <br> за можливість жити, працювати та навчатись.</p>
+                        <p class="alt-text">Нажаль картинка не завантажилась.</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="footer" id="contacts">
+                <ul>
+                    <li>
+                        <a class="footer-link link-focus" href="./">Влад Бродич</a>
+                    </li>
+                    <li>
+                        <a class="footer-link link-focus" href="mailto:brodich_vlad@ukr.net">Пошта: brodich_vlad@ukr.net</a>
+                    </li>
+                    <li>
+                        <a class="footer-link link-focus" href="tel:+380677606508">Телефон: 067-760-65-08</a>
+                    </li>
+                </ul>
+                <div class="time">14 Лютого 2023 рік.</div>
+            </div>
+        </footer>
+        <a class="link-bth-up" href="#"><!--Кнопка до гори-->
+            <svg class="bth-up" width="80" height="80" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50.5" cy="50.5" r="50.5" fill="#555768" fill-opacity="0.62"/>
+                <path d="M50.5 28.8572L38.953 48.8572H62.047L50.5 28.8572ZM52.5 72.1429V46.8572H48.5V72.1429H52.5Z" fill="white"/>
+                </svg>
+        </a>
+    </div>
+    <script src="./code/main_code.js"></script>
+    <script src="./code/homework_calculator.js"></script>
+</body>
+</html>
